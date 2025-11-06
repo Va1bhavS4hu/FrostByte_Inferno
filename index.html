@@ -1,56 +1,176 @@
+<!-- index.html -->
+<!doctype html>
 <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BioMods — Human Augmentation Lab</title>
+  <meta name="description" content="BioMods — safe, ethical human augmentation: night-vision, neural boost, dermal upgrades & more." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="6"/><path d="M32 60 L50 36 L68 60" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="brand-text">
+        <h1>BioMods</h1>
+        <p class="tag">Augment. Enhance. Evolve.</p>
+      </div>
+    </div>
 
+    <button id="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
 
-<section id="ethics" class="section ethics">
-<h3>Ethics & Safety</h3>
-<p>BioMods follows strict consent-first policies, independent review boards, and transparent reporting. We offer reversible or degradable solutions whenever feasible and provide lifelong monitoring.</p>
-</section>
+    <nav id="nav" class="nav">
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <h2>Tomorrow's abilities. Today.</h2>
+        <p>Tailored sensory and cognitive augmentations — clinically tested, ethically governed. Night-vision, cognitive accelerants, dermal resilience and more.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#services">Explore Services</a>
+          <button class="btn ghost" id="book-demo">Book a Demo</button>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="ui-holo">BM</div>
+      </div>
+    </section>
 
-<section id="contact" class="section contact">
-<h3>Book a Consultation</h3>
-<form id="contactForm">
-<div class="row">
-<input type="text" id="name" name="name" placeholder="Full name" required>
-<input type="email" id="email" name="email" placeholder="Email" required>
-</div>
-<textarea id="message" name="message" rows="4" placeholder="Tell us what you want to achieve"></textarea>
-<div class="row">
-<button type="submit" class="btn">Request Consult</button>
-<button type="button" class="ghost" id="resetForm">Reset</button>
-</div>
-<p class="disclaimer">By submitting you accept our <a href="#ethics">Ethics Policy</a> and Privacy Terms.</p>
-</form>
-</section>
+    <section id="services" class="cards">
+      <h3>Featured Augmentations</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h4>NightVision</h4>
+          <p>Extend visual spectrum into near-infrared for safe low-light navigation and situational awareness.</p>
+          <div class="meta">Min downtime · reversible calibration</div>
+          <button class="btn small" data-service="NightVision">More</button>
+        </article>
 
+        <article class="card">
+          <h4>NeuralBoost</h4>
+          <p>Non-invasive cognitive assist layer: faster retrieval, micro-suggestions, adaptive learning mode.</p>
+          <div class="meta">Cloud sync optional · privacy-first</div>
+          <button class="btn small" data-service="NeuralBoost">More</button>
+        </article>
 
-</main>
+        <article class="card">
+          <h4>DermalArmor</h4>
+          <p>Subdermal nano-lattice for impact dispersion and UV modulation — lightweight and flexible.</p>
+          <div class="meta">Custom fit · lifetime updates</div>
+          <button class="btn small" data-service="DermalArmor">More</button>
+        </article>
 
+        <article class="card">
+          <h4>SensorySuite</h4>
+          <p>Multi-sensor integration (thermal, ultrasonic) with priority filters and alerting modes.</p>
+          <div class="meta">Modular · clinician-backed</div>
+          <button class="btn small" data-service="SensorySuite">More</button>
+        </article>
+      </div>
+    </section>
 
-<footer class="site-footer">
-<div>© BioMods — Responsible Enhancement, 2083</div>
-<div class="socials">Follow: <a href="#">X</a> · <a href="#">In</a></div>
-</footer>
+    <section id="how" class="how">
+      <h3>How it works</h3>
+      <ol>
+        <li><strong>Consult:</strong> Secure intake and risk assessment.</li>
+        <li><strong>Design:</strong> Personalized augmentation plan & simulation.</li>
+        <li><strong>Deploy:</strong> Minimally invasive procedure, clinic-monitored.</li>
+        <li><strong>Calibrate:</strong> Software tailoring, safety checks, aftercare.</li>
+      </ol>
+    </section>
 
+    <section id="pricing" class="pricing">
+      <h3>Pricing</h3>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h4>Starter</h4>
+          <div class="price">₹49,999</div>
+          <ul>
+            <li>1 basic sensory mod</li>
+            <li>2 calibration sessions</li>
+            <li>6-month warranty</li>
+          </ul>
+          <button class="btn" data-plan="Starter">Choose</button>
+        </div>
 
-<!-- Modal for mod details -->
-<div id="modal" class="modal" aria-hidden="true">
-<div class="modal-content">
-<button id="closeModal" class="close">✕</button>
-<h4 id="modalTitle"></h4>
-<p id="modalDesc"></p>
-<ul id="modalFeatures"></ul>
-<div class="modal-actions">
-<button id="modalBook" class="btn">Book Consult</button>
-<button id="modalClose" class="ghost">Close</button>
-</div>
-</div>
-</div>
+        <div class="price-card featured">
+          <h4>Pro</h4>
+          <div class="price">₹1,29,999</div>
+          <ul>
+            <li>2 advanced mods (e.g., NightVision + NeuralBoost)</li>
+            <li>Lifetime updates</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn" data-plan="Pro">Choose</button>
+        </div>
 
+        <div class="price-card">
+          <h4>Enterprise</h4>
+          <div class="price">Custom</div>
+          <ul>
+            <li>Fleet deployments & integration</li>
+            <li>On-site clinic</li>
+            <li>Custom SLAs</li>
+          </ul>
+          <button class="btn" data-plan="Enterprise">Contact</button>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
-<link rel="stylesheet" href="styles.css">
+    <section id="contact" class="contact">
+      <h3>Contact & Safety</h3>
+      <p>BioMods operates under strict ethical guidelines — all procedures require full informed consent and clinical screening.</p>
 
+      <form id="contact-form" novalidate>
+        <label>
+          Full name
+          <input type="text" name="name" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <div class="form-row">
+          <button type="submit" class="btn primary">Send Request</button>
+          <button type="button" class="btn ghost" id="clear-form">Clear</button>
+        </div>
+        <div id="form-msg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> BioMods — All rights reserved</div>
+    <div class="legal">Privacy · Ethics · Safety</div>
+  </footer>
+
+  <!-- Modal (hidden by default) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h4 id="modal-title"></h4>
+      <p id="modal-body"></p>
+      <div class="modal-actions">
+        <button class="btn primary" id="modal-book">Book Consultation</button>
+        <button class="btn ghost modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js" defer></script>
 </body>
-
 </html>
