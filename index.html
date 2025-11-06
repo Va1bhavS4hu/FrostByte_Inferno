@@ -76,16 +76,61 @@
         </article>
       </div>
     </section>
+    <!-- flowchart: replace existing #how section with this -->
+<section id="how" class="how">
+  <h3>How it works</h3>
 
-    <section id="how" class="how">
-      <h3>How it works</h3>
-      <ol>
-        <li><strong>Consult:</strong> Secure intake and risk assessment.</li>
-        <li><strong>Design:</strong> Personalized augmentation plan & simulation.</li>
-        <li><strong>Deploy:</strong> Minimally invasive procedure, clinic-monitored.</li>
-        <li><strong>Calibrate:</strong> Software tailoring, safety checks, aftercare.</li>
-      </ol>
-    </section>
+  <div class="flowchart" aria-label="How BioMods works flowchart">
+    <!-- Node 1 -->
+    <div class="flow-item">
+      <div class="flow-node" tabindex="0" aria-describedby="step1-desc">
+        <!-- consult icon -->
+        <svg class="flow-icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M12 2a5 5 0 0 1 5 5v1h1a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V7a5 5 0 0 1 5-5z" fill="currentColor" />
+        </svg>
+        <strong>Consult</strong>
+        <div id="step1-desc" class="flow-desc">Secure intake, medical & ethical screening, risk assessment.</div>
+      </div>
+      <svg class="flow-arrow" viewBox="0 0 100 24" aria-hidden="true"><path d="M0 12 H80" stroke="currentColor" stroke-width="2" fill="none"/><polygon points="80,6 96,12 80,18" fill="currentColor"/></svg>
+    </div>
+
+    <!-- Node 2 -->
+    <div class="flow-item">
+      <div class="flow-node" tabindex="0" aria-describedby="step2-desc">
+        <!-- design icon -->
+        <svg class="flow-icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41L18.37 3.29a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" fill="currentColor"/></svg>
+        <strong>Design</strong>
+        <div id="step2-desc" class="flow-desc">Personalized augmentation plan & simulation, informed consent flow.</div>
+      </div>
+      <svg class="flow-arrow" viewBox="0 0 100 24" aria-hidden="true"><path d="M0 12 H80" stroke="currentColor" stroke-width="2" fill="none"/><polygon points="80,6 96,12 80,18" fill="currentColor"/></svg>
+    </div>
+
+    <!-- Node 3 -->
+    <div class="flow-item">
+      <div class="flow-node" tabindex="0" aria-describedby="step3-desc">
+        <!-- deploy icon -->
+        <svg class="flow-icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M12 2l3 6 6 .9-4.5 4 1 6L12 17.8 6.5 19.9l1-6L3 9.9 9 9 12 2z" fill="currentColor"/></svg>
+        <strong>Deploy</strong>
+        <div id="step3-desc" class="flow-desc">Clinic-monitored, minimally invasive procedure and safety monitoring.</div>
+      </div>
+      <svg class="flow-arrow" viewBox="0 0 100 24" aria-hidden="true"><path d="M0 12 H80" stroke="currentColor" stroke-width="2" fill="none"/><polygon points="80,6 96,12 80,18" fill="currentColor"/></svg>
+    </div>
+
+    <!-- Node 4 -->
+    <div class="flow-item">
+      <div class="flow-node" tabindex="0" aria-describedby="step4-desc">
+        <!-- calibrate icon -->
+        <svg class="flow-icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm8.94 3a8.03 8.03 0 0 0-.66-2l-1.85.7a6.03 6.03 0 0 1 .5 1.3l2 0zM4.5 6.2l1.4-.7A8 8 0 0 0 3 12h2a6 6 0 0 1 1.5-5.8z" fill="currentColor"/></svg>
+        <strong>Calibrate</strong>
+        <div id="step4-desc" class="flow-desc">Software tailoring, safety checks, aftercare & follow-ups.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section id="pricing" class="pricing">
       <h3>Pricing</h3>
@@ -178,6 +223,7 @@
   <script src="scripts.js" defer></script>
 </body>
 </html>
+
 
 
 
