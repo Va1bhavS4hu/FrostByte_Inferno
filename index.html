@@ -130,9 +130,28 @@
       <p>BioMods operates under strict ethical guidelines — all procedures require full informed consent and clinical screening.</p>
 
       <form action="https://formspree.io/f/mrbonljr" method="POST">
-  <label>Full name <input type="text" name="name" required></label>
-  <label>Email <input type="email" name="email" required></label>
-  <label>Message <textarea name="message" required></textarea></label>
+  <label>Full name
+    <input type="text" name="name" required>
+  </label>
+
+  <label>Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>Message
+    <textarea name="message" required></textarea>
+  </label>
+
+  <label>Select Augmentation
+    <select name="augmentation" required>
+      <option value="">--Choose an option--</option>
+      <option value="NightVision">NightVision</option>
+      <option value="NeuralBoost">NeuralBoost</option>
+      <option value="DermalArmor">DermalArmor</option>
+      <option value="EyePointerControl">EyePointer Control</option>
+    </select>
+  </label>
+
   <button type="submit" class="btn primary">Send Request</button>
       </form>
     </section>
@@ -159,6 +178,7 @@
   <script src="scripts.js" defer></script>
 </body>
 </html>
+
 
 
 
