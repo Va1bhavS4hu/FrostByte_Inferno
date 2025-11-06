@@ -103,7 +103,7 @@ body{
 /* Cards / Services */
 .cards{width:100%;max-width:var(--maxwidth);padding:18px;border-radius:16px;background:var(--panel)}
 .cards h3{margin:0 0 16px}
-.card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .card{padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.015),transparent);border:1px solid rgba(255,255,255,0.02)}
 .card h4{margin:0 0 6px}
 .card p{margin:0 0 10px;color:var(--muted)}
@@ -162,4 +162,5 @@ body{
   position: relative;
   overflow: hidden;
 }
+
 
