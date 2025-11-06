@@ -9,10 +9,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <video width="640" height="360" controls autoplay muted loop>
-  <source src="neuralink.mp4" type="video/mp4">
-</video>
-
   <header class="site-header">
     <div class="brand">
       <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="6"/><path d="M32 60 L50 36 L68 60" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -34,6 +30,10 @@
 
   <main>
     <section class="hero" id="home">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="neuralink.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
       <div class="hero-inner">
         <h2>Tomorrow's abilities. Today.</h2>
         <p>Tailored sensory and cognitive augmentations — clinically tested, ethically governed. Night-vision, cognitive accelerants, dermal resilience and more.</p>
@@ -163,6 +163,7 @@
   <script src="scripts.js" defer></script>
 </body>
 </html>
+
 
 
 
