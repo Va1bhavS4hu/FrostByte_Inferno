@@ -129,27 +129,11 @@
       <h3>Contact & Safety</h3>
       <p>BioMods operates under strict ethical guidelines — all procedures require full informed consent and clinical screening.</p>
 
-      <form id="contact-form" novalidate>
-        <label>
-          Full name
-          <input type="text" name="name" required minlength="2" />
-        </label>
-
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-
-        <div class="form-row">
-          <button type="submit" class="btn primary">Send Request</button>
-          <button type="button" class="btn ghost" id="clear-form">Clear</button>
-        </div>
-        <div id="form-msg" role="status" aria-live="polite"></div>
+      <form action="https://formspree.io/f/mxyzabcd" method="POST">
+  <label>Full name <input type="text" name="name" required></label>
+  <label>Email <input type="email" name="email" required></label>
+  <label>Message <textarea name="message" required></textarea></label>
+  <button type="submit" class="btn primary">Send Request</button>
       </form>
     </section>
   </main>
@@ -175,5 +159,6 @@
   <script src="scripts.js" defer></script>
 </body>
 </html>
+
 
 
