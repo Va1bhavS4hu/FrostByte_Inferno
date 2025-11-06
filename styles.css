@@ -223,6 +223,48 @@ body{
   .flow-arrow{transform:rotate(90deg);width:24px;height:96px;margin:0 8px}
   .flow-node{align-items:flex-start;text-align:left}
 }
+/* Featured Augmentations title icons */
+.aug-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 2rem;
+  color: var(--text);
+  position: relative;
+}
+
+.title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  color: var(--accent);
+  box-shadow: 0 0 12px rgba(0,255,200,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.title-icon:hover {
+  transform: scale(1.2) rotate(15deg);
+  box-shadow: 0 0 24px rgba(0,255,200,0.5);
+  background: rgba(0,255,200,0.1);
+}
+
+.title-icon .icon {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.title-icon:hover .icon {
+  transform: rotate(10deg);
+}
+
 
 
 
