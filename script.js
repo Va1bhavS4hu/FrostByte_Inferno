@@ -94,3 +94,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
     if(e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal();
   });
 });
+document.querySelectorAll('.title-icon').forEach(icon => {
+  icon.addEventListener('mouseenter', () => {
+    icon.style.boxShadow = '0 0 30px rgba(0,255,255,0.7)';
+  });
+  icon.addEventListener('mouseleave', () => {
+    icon.style.boxShadow = '0 0 12px rgba(0,255,200,0.2)';
+  });
+});
+
